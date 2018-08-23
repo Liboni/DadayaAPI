@@ -77,3 +77,13 @@
 2018-08-23 09:57:59.678 +02:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 404
 2018-08-23 09:57:59.681 +02:00 [Information] Executed action "DadayaAPI.Controllers.NoticesController.GetNotice (DadayaAPI)" in 65.8529ms
 2018-08-23 09:57:59.683 +02:00 [Information] Request finished in 71.3596ms 404 
+2018-08-23 16:38:47.796 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/api/values  
+2018-08-23 16:38:48.377 +02:00 [Information] Executing action method "DadayaAPI.Controllers.ValuesController.Get (DadayaAPI)" with arguments (null) - ModelState is Valid
+2018-08-23 16:38:48.380 +02:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-08-23 16:38:48.405 +02:00 [Information] Executed action "DadayaAPI.Controllers.ValuesController.Get (DadayaAPI)" in 47.3602ms
+2018-08-23 16:38:48.406 +02:00 [Information] Request finished in 642.5457ms 200 application/json; charset=utf-8
+2018-08-23 16:40:08.959 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/api/values  
+2018-08-23 16:40:09.082 +02:00 [Information] Executing action method "DadayaAPI.Controllers.ValuesController.Get (DadayaAPI)" with arguments (null) - ModelState is Valid
+2018-08-23 16:40:09.086 +02:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-08-23 16:40:09.097 +02:00 [Information] Executed action "DadayaAPI.Controllers.ValuesController.Get (DadayaAPI)" in 20.2768ms
+2018-08-23 16:40:09.099 +02:00 [Information] Request finished in 149.4477ms 200 application/json; charset=utf-8

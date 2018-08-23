@@ -13,7 +13,8 @@ namespace DadayaAPI
     {
         private readonly IEnumerable<string> actionsWithUpload = new[]
                                                                      {
-                                                                         "Api"+NamingHelpers.GetOperationId<ValuesController>(nameof(ValuesController.Post)),
+                                                                         "Api"+NamingHelpers.GetOperationId<GalleriesController>(nameof(GalleriesController.PostGallery)),
+                                                                         "Api"+NamingHelpers.GetOperationId<GalleriesController>(nameof(GalleriesController.PutGallery))
                                                                      };
         public void Apply(Operation operation, OperationFilterContext context)
         {

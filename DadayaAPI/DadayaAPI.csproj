@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="BusinessLogic\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>

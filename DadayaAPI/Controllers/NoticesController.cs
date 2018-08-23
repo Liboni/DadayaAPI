@@ -1,12 +1,16 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using DadayaAPI.Data;
-
+﻿
 namespace DadayaAPI.Controllers
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    using DadayaAPI.Data;
+    using DadayaAPI.Models;
+
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore;
+
     [Produces("application/json")]
     [Route("api/Notices")]
     public class NoticesController : Controller
@@ -46,19 +50,13 @@ namespace DadayaAPI.Controllers
 
         // PUT: api/Notices/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutNotice([FromRoute] int id, [FromBody] Notice notice)
+        public async Task<IActionResult> PutNotice([FromRoute] int id, [FromBody] NoticeModel notice)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            if (!ModelState.IsValid)return BadRequest(ModelState);
 
-            if (id != notice.Id)
-            {
-                return BadRequest();
-            }
+            if (id != notice.Id)return BadRequest();
 
-            context.Entry(notice).State = EntityState.Modified;
+            context.Entry(ObjectConverter.ToNotice(notice).Result).State = EntityState.Modified;
 
             try
             {
@@ -67,13 +65,8 @@ namespace DadayaAPI.Controllers
             catch (DbUpdateConcurrencyException)
             {
                 if (!NoticeExists(id))
-                {
                     return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                throw;
             }
 
             return NoContent();
@@ -81,14 +74,11 @@ namespace DadayaAPI.Controllers
 
         // POST: api/Notices
         [HttpPost]
-        public async Task<IActionResult> PostNotice([FromBody] Notice notice)
+        public async Task<IActionResult> PostNotice([FromBody] NoticeModel notice)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            if (!ModelState.IsValid)return BadRequest(ModelState);
 
-            context.Notices.Add(notice);
+            context.Notices.Add(ObjectConverter.ToNotice(notice).Result);
             await context.SaveChangesAsync();
 
             return CreatedAtAction("GetNotice", new { id = notice.Id }, notice);
@@ -98,17 +88,11 @@ namespace DadayaAPI.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteNotice([FromRoute] int id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            if (!ModelState.IsValid)return BadRequest(ModelState);
 
             var notice = await context.Notices.SingleOrDefaultAsync(m => m.Id == id);
-            if (notice == null)
-            {
-                return NotFound();
-            }
-             
+            if (notice == null)return NotFound();
+           
             context.Notices.Remove(notice);
             await context.SaveChangesAsync();
 

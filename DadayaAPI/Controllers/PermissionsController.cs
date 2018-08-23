@@ -1,13 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using DadayaAPI.Data;
-
+﻿
 namespace DadayaAPI.Controllers
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    using DadayaAPI.Data;
+
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore;
+
     [Produces("application/json")]
     [Route("api/Permissions")]
     public class PermissionsController : Controller
@@ -30,18 +32,11 @@ namespace DadayaAPI.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetPermission([FromRoute] int id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
+            if (!ModelState.IsValid)return BadRequest(ModelState);
             var permission = await context.Permissions.SingleOrDefaultAsync(m => m.Id == id);
 
             if (permission == null)
-            {
                 return NotFound();
-            }
-
             return Ok(permission);
         }
 
@@ -49,16 +44,8 @@ namespace DadayaAPI.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPermission([FromRoute] int id, [FromBody] Permission permission)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            if (id != permission.Id)
-            {
-                return BadRequest();
-            }
-
+            if (!ModelState.IsValid)return BadRequest(ModelState);
+            if (id != permission.Id)return BadRequest();
             context.Entry(permission).State = EntityState.Modified;
 
             try
@@ -67,14 +54,8 @@ namespace DadayaAPI.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PermissionExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
+                if (!PermissionExists(id))return NotFound();
                     throw;
-                }
             }
 
             return NoContent();
@@ -84,11 +65,7 @@ namespace DadayaAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> PostPermission([FromBody] Permission permission)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
+            if (!ModelState.IsValid)return BadRequest(ModelState);
             context.Permissions.Add(permission);
             await context.SaveChangesAsync();
 
@@ -100,16 +77,9 @@ namespace DadayaAPI.Controllers
         public async Task<IActionResult> DeletePermission([FromRoute] int id)
         {
             if (!ModelState.IsValid)
-            {
                 return BadRequest(ModelState);
-            }
-
-            var permission = await context.Permissions.SingleOrDefaultAsync(m => m.Id == id);
-            if (permission == null)
-            {
-                return NotFound();
-            }
-
+           var permission = await context.Permissions.SingleOrDefaultAsync(m => m.Id == id);
+            if (permission == null)return NotFound();
             context.Permissions.Remove(permission);
             await context.SaveChangesAsync();
 

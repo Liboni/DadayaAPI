@@ -29,6 +29,26 @@ namespace DadayaAPI.Data
                                        };
             await userManager.CreateAsync(user, "Password@123");
             await userManager.AddToRoleAsync(user, "Admin");
+            context.GalleryTypes.Add(new GalleryType{Name = "Administration Block"});
+            context.SaveChanges();
+            context.GalleryTypes.Add(new GalleryType{Name = "Classrooms"});
+            context.SaveChanges();
+            context.GalleryTypes.Add(new GalleryType{Name = "Dinning Hall"});
+            context.SaveChanges();
+            context.GalleryTypes.Add(new GalleryType{Name = "Physics Laboratory"});
+            context.SaveChanges();
+            context.GalleryTypes.Add(new GalleryType{Name = "Chemistry Laboratory" });
+            context.SaveChanges();
+            context.GalleryTypes.Add(new GalleryType{Name = "Boys Hostels"});
+            context.SaveChanges();
+            context.GalleryTypes.Add(new GalleryType{Name = "Girls Hostels"});
+            context.SaveChanges();
+            context.GalleryTypes.Add(new GalleryType{Name = "Poster"});
+            context.SaveChanges();
+            context.GalleryTypes.Add(new GalleryType{Name = "Computer Science Laboratory" });
+            context.SaveChanges();
+            context.GalleryTypes.Add(new GalleryType{Name = "Staff Houses"});
+            context.SaveChanges();
         }
     }
 }
