@@ -108,7 +108,7 @@ namespace DadayaAPI.Controllers
             {
                 return NotFound();
             }
-
+             
             context.Notices.Remove(notice);
             await context.SaveChangesAsync();
 
