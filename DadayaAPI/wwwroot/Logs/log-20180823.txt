@@ -77,3 +77,14 @@
 2018-08-23 09:57:59.678 +02:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 404
 2018-08-23 09:57:59.681 +02:00 [Information] Executed action "DadayaAPI.Controllers.NoticesController.GetNotice (DadayaAPI)" in 65.8529ms
 2018-08-23 09:57:59.683 +02:00 [Information] Request finished in 71.3596ms 404 
+2018-08-23 11:20:28.539 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/api/values  
+2018-08-23 11:20:28.539 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/index.html  
+2018-08-23 11:20:28.539 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:58701/  0
+2018-08-23 11:20:28.632 +02:00 [Information] Request finished in 143.6234ms 200 
+2018-08-23 11:20:28.770 +02:00 [Information] Request finished in 286.8394ms 200 text/html
+2018-08-23 11:20:28.941 +02:00 [Information] Executing action method "DadayaAPI.Controllers.ValuesController.Get (DadayaAPI)" with arguments (null) - ModelState is Valid
+2018-08-23 11:20:28.949 +02:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-08-23 11:20:28.964 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/v1.0/swagger.json  
+2018-08-23 11:20:28.974 +02:00 [Information] Executed action "DadayaAPI.Controllers.ValuesController.Get (DadayaAPI)" in 87.4071ms
+2018-08-23 11:20:28.976 +02:00 [Information] Request finished in 495.8431ms 200 application/json; charset=utf-8
+2018-08-23 11:20:29.147 +02:00 [Information] Request finished in 187.8326ms 200 application/json;charset=utf-8
