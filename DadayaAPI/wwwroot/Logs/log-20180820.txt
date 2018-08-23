@@ -1,0 +1,30 @@
+2018-08-20 14:15:55.295 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/api/values  
+2018-08-20 14:15:55.295 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:58701/  0
+2018-08-20 14:15:55.538 +02:00 [Information] Request finished in 316.4774ms 200 
+2018-08-20 14:15:56.725 +02:00 [Information] Executing action method "DadayaAPI.Controllers.ValuesController.Get (DadayaAPI)" with arguments (null) - ModelState is Valid
+2018-08-20 14:15:56.743 +02:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-08-20 14:15:56.770 +02:00 [Information] Executed action "DadayaAPI.Controllers.ValuesController.Get (DadayaAPI)" in 191.5494ms
+2018-08-20 14:15:56.774 +02:00 [Information] Request finished in 1561.642ms 200 application/json; charset=utf-8
+2018-08-20 14:15:56.891 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/favicon.ico  
+2018-08-20 14:15:56.897 +02:00 [Information] Request finished in 4.0947ms 404 
+2018-08-20 14:17:27.694 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger  
+2018-08-20 14:17:27.742 +02:00 [Information] Request finished in 48.6162ms 301 
+2018-08-20 14:17:27.747 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/index.html  
+2018-08-20 14:17:27.853 +02:00 [Information] Request finished in 105.6122ms 200 text/html
+2018-08-20 14:17:27.866 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/swagger-ui.css  
+2018-08-20 14:17:27.868 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/swagger-ui-bundle.js  
+2018-08-20 14:17:27.870 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/swagger-ui-standalone-preset.js  
+2018-08-20 14:17:27.875 +02:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2018-08-20 14:17:27.927 +02:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2018-08-20 14:17:27.929 +02:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2018-08-20 14:17:28.059 +02:00 [Information] Request finished in 192.2005ms 200 text/css
+2018-08-20 14:17:28.088 +02:00 [Information] Request finished in 216.7889ms 200 application/javascript
+2018-08-20 14:17:28.115 +02:00 [Information] Request finished in 244.6637ms 200 application/javascript
+2018-08-20 14:17:28.650 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/v1.0/swagger.json  
+2018-08-20 14:17:28.891 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/favicon-32x32.png  
+2018-08-20 14:17:28.895 +02:00 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2018-08-20 14:17:28.897 +02:00 [Information] Request finished in 8.3257ms 200 image/png
+2018-08-20 14:17:28.905 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/favicon-16x16.png  
+2018-08-20 14:17:28.907 +02:00 [Information] Sending file. Request path: '"/favicon-16x16.png"'. Physical path: '"N/A"'
+2018-08-20 14:17:28.910 +02:00 [Information] Request finished in 5.8741ms 200 image/png
+2018-08-20 14:17:29.015 +02:00 [Information] Request finished in 365.1792ms 200 application/json;charset=utf-8

@@ -1,0 +1,79 @@
+2018-08-23 09:27:52.892 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/api/values  
+2018-08-23 09:27:52.892 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger  
+2018-08-23 09:27:53.080 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:58701/  0
+2018-08-23 09:27:53.674 +02:00 [Information] Request finished in 710.5248ms 200 
+2018-08-23 09:27:54.199 +02:00 [Information] Request finished in 1451.3112ms 301 
+2018-08-23 09:27:54.351 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/index.html  
+2018-08-23 09:27:55.082 +02:00 [Information] Request finished in 708.4942ms 200 text/html
+2018-08-23 09:27:55.169 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/swagger-ui-bundle.js  
+2018-08-23 09:27:55.171 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/swagger-ui.css  
+2018-08-23 09:27:55.173 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/swagger-ui-standalone-preset.js  
+2018-08-23 09:27:55.280 +02:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2018-08-23 09:27:55.433 +02:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2018-08-23 09:27:55.434 +02:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2018-08-23 09:27:55.672 +02:00 [Information] Request finished in 497.6195ms 200 application/javascript
+2018-08-23 09:27:55.680 +02:00 [Information] Request finished in 510.9844ms 200 text/css
+2018-08-23 09:27:56.132 +02:00 [Information] Request finished in 1047.2545ms 200 application/javascript
+2018-08-23 09:27:56.824 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/v1.0/swagger.json  
+2018-08-23 09:27:57.401 +02:00 [Information] Executing action method "DadayaAPI.Controllers.ValuesController.Get (DadayaAPI)" with arguments (null) - ModelState is Valid
+2018-08-23 09:27:57.409 +02:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-08-23 09:27:57.526 +02:00 [Information] Executed action "DadayaAPI.Controllers.ValuesController.Get (DadayaAPI)" in 997.0989ms
+2018-08-23 09:27:57.528 +02:00 [Information] Request finished in 4781.9437ms 200 application/json; charset=utf-8
+2018-08-23 09:27:57.692 +02:00 [Information] Request finished in 867.6691ms 200 application/json;charset=utf-8
+2018-08-23 09:28:20.012 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/images  
+2018-08-23 09:28:20.016 +02:00 [Information] Request finished in 3.3916ms 404 
+2018-08-23 09:28:31.927 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/images/user-image.jpg  
+2018-08-23 09:28:31.931 +02:00 [Information] Request finished in 3.2748ms 404 
+2018-08-23 09:28:52.929 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/images/user-image.jpg  
+2018-08-23 09:28:52.931 +02:00 [Information] Request finished in 2.6128ms 404 
+2018-08-23 09:56:17.793 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:58701/  0
+2018-08-23 09:56:17.793 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/api/values  
+2018-08-23 09:56:17.794 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/index.html  
+2018-08-23 09:56:17.850 +02:00 [Information] Request finished in 105.1946ms 200 
+2018-08-23 09:56:17.974 +02:00 [Information] Request finished in 229.6616ms 200 text/html
+2018-08-23 09:56:18.229 +02:00 [Information] Executing action method "DadayaAPI.Controllers.ValuesController.Get (DadayaAPI)" with arguments (null) - ModelState is Valid
+2018-08-23 09:56:18.238 +02:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-08-23 09:56:18.249 +02:00 [Information] Executed action "DadayaAPI.Controllers.ValuesController.Get (DadayaAPI)" in 73.6804ms
+2018-08-23 09:56:18.252 +02:00 [Information] Request finished in 508.2188ms 200 application/json; charset=utf-8
+2018-08-23 09:56:18.429 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/swagger/v1.0/swagger.json  
+2018-08-23 09:56:18.561 +02:00 [Information] Request finished in 130.1131ms 200 application/json;charset=utf-8
+2018-08-23 09:56:42.643 +02:00 [Information] Request starting HTTP/1.1 POST http://localhost:58701/api/Notices application/json-patch+json 112
+2018-08-23 09:56:42.795 +02:00 [Information] Executing action method "DadayaAPI.Controllers.NoticesController.PostNotice (DadayaAPI)" with arguments (["DadayaAPI.Data.Notice"]) - ModelState is Valid
+2018-08-23 09:56:43.017 +02:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-08-23 09:56:43.065 +02:00 [Information] Executed action "DadayaAPI.Controllers.NoticesController.PostNotice (DadayaAPI)" in 361.5033ms
+2018-08-23 09:56:43.069 +02:00 [Information] Request finished in 426.0098ms 201 application/json; charset=utf-8
+2018-08-23 09:56:55.503 +02:00 [Information] Request starting HTTP/1.1 POST http://localhost:58701/api/Notices application/json-patch+json 109
+2018-08-23 09:56:55.531 +02:00 [Information] Executing action method "DadayaAPI.Controllers.NoticesController.PostNotice (DadayaAPI)" with arguments (["DadayaAPI.Data.Notice"]) - ModelState is Valid
+2018-08-23 09:56:55.566 +02:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-08-23 09:56:55.569 +02:00 [Information] Executed action "DadayaAPI.Controllers.NoticesController.PostNotice (DadayaAPI)" in 62.8638ms
+2018-08-23 09:56:55.572 +02:00 [Information] Request finished in 67.9625ms 201 application/json; charset=utf-8
+2018-08-23 09:57:01.916 +02:00 [Information] Request starting HTTP/1.1 POST http://localhost:58701/api/Notices application/json-patch+json 106
+2018-08-23 09:57:01.937 +02:00 [Information] Executing action method "DadayaAPI.Controllers.NoticesController.PostNotice (DadayaAPI)" with arguments (["DadayaAPI.Data.Notice"]) - ModelState is Valid
+2018-08-23 09:57:01.967 +02:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-08-23 09:57:01.969 +02:00 [Information] Executed action "DadayaAPI.Controllers.NoticesController.PostNotice (DadayaAPI)" in 51.3973ms
+2018-08-23 09:57:01.972 +02:00 [Information] Request finished in 55.3215ms 201 application/json; charset=utf-8
+2018-08-23 09:57:10.846 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/api/Notices/2  
+2018-08-23 09:57:10.898 +02:00 [Information] Executing action method "DadayaAPI.Controllers.NoticesController.GetNotice (DadayaAPI)" with arguments (["2"]) - ModelState is Valid
+2018-08-23 09:57:10.975 +02:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-08-23 09:57:10.978 +02:00 [Information] Executed action "DadayaAPI.Controllers.NoticesController.GetNotice (DadayaAPI)" in 107.9369ms
+2018-08-23 09:57:10.980 +02:00 [Information] Request finished in 134.0871ms 200 application/json; charset=utf-8
+2018-08-23 09:57:18.665 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/api/Notices/1  
+2018-08-23 09:57:18.683 +02:00 [Information] Executing action method "DadayaAPI.Controllers.NoticesController.GetNotice (DadayaAPI)" with arguments (["1"]) - ModelState is Valid
+2018-08-23 09:57:18.725 +02:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-08-23 09:57:18.727 +02:00 [Information] Executed action "DadayaAPI.Controllers.NoticesController.GetNotice (DadayaAPI)" in 59.6756ms
+2018-08-23 09:57:18.729 +02:00 [Information] Request finished in 64.6075ms 200 application/json; charset=utf-8
+2018-08-23 09:57:31.059 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/api/Notices  
+2018-08-23 09:57:31.079 +02:00 [Information] Executing action method "DadayaAPI.Controllers.NoticesController.GetNotices (DadayaAPI)" with arguments (null) - ModelState is Valid
+2018-08-23 09:57:31.083 +02:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-08-23 09:57:31.149 +02:00 [Information] Executed action "DadayaAPI.Controllers.NoticesController.GetNotices (DadayaAPI)" in 85.875ms
+2018-08-23 09:57:31.151 +02:00 [Information] Request finished in 92.3206ms 200 application/json; charset=utf-8
+2018-08-23 09:57:52.309 +02:00 [Information] Request starting HTTP/1.1 DELETE http://localhost:58701/api/Notices/1  
+2018-08-23 09:57:52.331 +02:00 [Information] Executing action method "DadayaAPI.Controllers.NoticesController.DeleteNotice (DadayaAPI)" with arguments (["1"]) - ModelState is Valid
+2018-08-23 09:57:52.404 +02:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-08-23 09:57:52.407 +02:00 [Information] Executed action "DadayaAPI.Controllers.NoticesController.DeleteNotice (DadayaAPI)" in 92.2047ms
+2018-08-23 09:57:52.409 +02:00 [Information] Request finished in 101.0373ms 200 application/json; charset=utf-8
+2018-08-23 09:57:59.612 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:58701/api/Notices/1  
+2018-08-23 09:57:59.633 +02:00 [Information] Executing action method "DadayaAPI.Controllers.NoticesController.GetNotice (DadayaAPI)" with arguments (["1"]) - ModelState is Valid
+2018-08-23 09:57:59.678 +02:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 404
+2018-08-23 09:57:59.681 +02:00 [Information] Executed action "DadayaAPI.Controllers.NoticesController.GetNotice (DadayaAPI)" in 65.8529ms
+2018-08-23 09:57:59.683 +02:00 [Information] Request finished in 71.3596ms 404 
